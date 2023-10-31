@@ -30,6 +30,7 @@ header>nav>figure>a {
 }
 header>nav>figure>a>img {
     width: 40%;
+    min-width: 100px;
 }
 
 header>nav>ul {          /* container for navigation buttons */
@@ -39,7 +40,7 @@ header>nav>ul {          /* container for navigation buttons */
     flex-wrap: wrap;
     list-style: none;   
     text-align: center;
-    margin: 0 5% 0 0;
+    margin: 0 0 0 5em;
 }
 
 header>nav>ul>li {
@@ -58,4 +59,8 @@ header>nav>ul>li>a {
     header>nav>ul>li>a {
         font-size: 0.8em;
     }
+    header>nav>ul>li {
+        margin-right: 2em;
+    }
+
 }

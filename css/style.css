@@ -53,8 +53,19 @@ header>nav>ul>li>a {
 
 @media screen and (max-width: 768px)
 {
+    nav {
+        display: flex;
+    }
+    nav>figure {
+        flex: 0.5;
+    }
+    nav>ul {
+        flex: 2;
+    }
     header>nav>ul>li>a {
         font-size: 0.9em;
+        white-space: nowrap;
+        
     }
     header>nav>ul>li {
         margin-right: 1em;

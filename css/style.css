@@ -1,73 +1,76 @@
 html, body {
-    margin: 0;
     padding: 0;
+    margin: 0;
+}
+html {
+    background-color: #a7a7a7;
+}
+header:hover {
+    transition-duration: 0.4s;
+    height: 100vh;
+    width: 15rem;
+    position: fixed;
+    text-align: center;
+    font-size: 2em;
 }
 header {
-    width: 100%;
-    height: 5em;
+    width: 5rem;
+    height: 100vh;  
+    position: fixed;
+    background-color: #070425;
+    text-align: center;
+    box-shadow: 0 0 15px #000;
 }
+nav>ul>li:hover>a {
+    color: #affafa;
+    transition-duration: 0s;
+}
+
+/* font-size increase */
+header:hover>nav>label {
+    font-size: 200%;
+}
+header:hover>nav>ul {
+    font-size: 100%;
+}
+
 nav {
-    display: flex;
-    align-items: center;
-    background-color: #00ffff;
-    width: 100%;
-    padding: 0.5em 0 0.5em 0;
+    height: 100vh;
+    color: white;
 }
-
-header>nav>figure {         /* container for logo */
-    flex: 1;
-    display: flex;
-    width: 100%;
-    text-align: center;
-    align-items: center;
-    margin: 0 2em 0 2em;
+nav>label {
+    font-size: 32px;
+    background-color: #3d3d3d81;
+    display: block;
+    border-bottom: 2px solid black;
 }
-header>nav>figure>a {
+nav>ul {
+    height: 92vh;
+    list-style: none;
     display: flex;
+    flex-direction: column;
     margin: 0;
+    padding: 0;
+    font-size: 16px;
 }
-header>nav>figure>a>img {
-    width: 40%;
-    min-width: 100px;
+nav>ul>li {
+    padding: 0.5rem 0 0.5em 0;
 }
-
-header>nav>ul {          /* container for navigation buttons */
-    flex: 2;
-    width: 100%;      
-    display: flex;
-    list-style: none;   
-    text-align: center;
-    margin: 0 2em 0 0;
+li:last-child {
+    margin-top: auto;
+}
+li:first-child {
+    margin-top: 4vh;
 }
 
-header>nav>ul>li {
-    flex: 1;
-    padding: 0 5% 0 5%;
-}
-
-header>nav>ul>li>a {
+nav>ul>li>a {
     text-decoration: none;
-    color: #000;
-    font-size: 1em;
+    color: white;
 }
-
-@media screen and (max-width: 768px)
-{
-    nav {
-        display: flex;
-    }
-    nav>figure {
-        flex: 0.5;
-    }
-    header>nav>ul {
-        flex: 2;
-        display: flex;
-        justify-content: space-between;
-        margin-right: 10%;
-    }
-    header>nav>ul>li>a {
-        font-size: 0.9em;
-        white-space: nowrap;  
-    }
-
+nav>ul>li:hover {
+    background-color: #3d3d3d81;
+}
+a {
+    width: 100%;
+    display: block;
 }

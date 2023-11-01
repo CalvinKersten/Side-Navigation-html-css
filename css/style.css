@@ -17,19 +17,27 @@ html {
     src: url(font\Montserrat\Montserrat-VariableFont_wght.ttf);
 }
 
-/* header */
+/* header-x */
+.h-x {
+    width: 100%;
+    height: 5rem;
+    background-color: #070425;
+    z-index: 9997;
+}
+/* header-y */
 
-header {
+.h-y {
     width: 5rem;
     height: 100vh;
     position: fixed;
     background-color: #070425;
     text-align: center;
     box-shadow: 0 0 15px #000;
+    z-index: 9998;
 }
 
 /* hover-effects */
-header:hover {
+.h-y:hover {
     transition-duration: 0.4s;
     height: 100vh;
     width: 15rem;
@@ -38,39 +46,40 @@ header:hover {
     font-size: 2em;
 }
 
-nav>ul>li:hover>a {
+.h-ynav>ul>li:hover>a {
     color: #affafa;
     transition-duration: 0s;
 }
 
-header:hover>nav>label {
+.h-y:hover>nav>label {
     font-size: 200%;
 }
 
-header:hover>nav>ul {
+.h-y:hover>nav>ul {
     font-size: 100%;
 }
 
-nav>ul>li:hover {
+.h-ynav>ul>li:hover {
     background-color: #3d3d3d81;
 }
 
 /* nav */
-nav {
+.h-y>nav {
     height: 100vh;
     color: white;
 }
 
 /* label */
-nav>label {
+.h-y>nav>label {
     font-size: 25px;
     background-color: #3d3d3d81;
     display: block;
     border-bottom: 2px solid black;
+    border-top: 2px solid black;    
 }
 
 /* list */
-nav>ul {
+.h-y>nav>ul {
     height: 92vh;
     list-style: none;
     display: flex;
@@ -80,25 +89,23 @@ nav>ul {
     font-size: 16px;
 }
 
-nav>ul>li {
+.h-y>nav>ul>li {
     padding: 0.5rem 0 0.5em 0;
 }
 
-li:last-child {
+.h-y>nav>ul>li:last-child {
     margin-top: auto;
 }
 
-li:first-child {
+.h-y>nav>ul>li:first-child {
     margin-top: 4vh;
 }
 
 /* ancor */
-a {
-    width: 100%;
-    display: block;
-}
 
-nav>ul>li>a {
+.h-y>nav>ul>li>a {
     text-decoration: none;
     color: white;
+    width: 100%;
+    display: block;
 }

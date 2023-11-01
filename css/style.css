@@ -4,6 +4,11 @@ html, body {
 }
 html {
     background-color: #a7a7a7;
+    font-family: montserrat;
+}
+@font-face {
+    font-family: montserrat;
+    src: url(font\Montserrat\Montserrat-VariableFont_wght.ttf);
 }
 header:hover {
     transition-duration: 0.4s;
@@ -39,7 +44,7 @@ nav {
     color: white;
 }
 nav>label {
-    font-size: 32px;
+    font-size: 25px;
     background-color: #3d3d3d81;
     display: block;
     border-bottom: 2px solid black;

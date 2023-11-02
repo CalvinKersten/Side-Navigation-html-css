@@ -7,8 +7,9 @@ body {
 }
 
 html {
-    background-color: #a7a7a7;
+    background-image: linear-gradient(#070425, #75e9d9);
     font-family: montserrat;
+    height: 100vh;
 }
 
 /* font */
@@ -19,10 +20,13 @@ html {
 
 /* header-x */
 .h-x {
-    width: 100%;
+    width: calc(100vw - 5rem);
+    top: 0;
+    right: 0;
     height: 5rem;
     background-color: #070425;
     z-index: 9997;
+    position: fixed;
 }
 /* header-y */
 
@@ -37,6 +41,10 @@ html {
 }
 
 /* hover-effects */
+.h-y:hover + .h-x {
+    width: calc(100vw - 15rem);
+    transition-duration: 0.4s;
+}
 .h-y:hover {
     transition-duration: 0.4s;
     height: 100vh;
@@ -46,7 +54,7 @@ html {
     font-size: 2em;
 }
 
-.h-ynav>ul>li:hover>a {
+.h-y>nav>ul>li:hover>a {
     color: #affafa;
     transition-duration: 0s;
 }
@@ -80,7 +88,7 @@ html {
 
 /* list */
 .h-y>nav>ul {
-    height: 92vh;
+    height: 85vh;
     list-style: none;
     display: flex;
     flex-direction: column;
